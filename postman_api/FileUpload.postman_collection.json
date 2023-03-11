@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "89cf9985-30a2-4ddc-8fd4-48ef81d8eb3a",
+		"name": "FileUpload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "trytwo",
+			"item": [
+				{
+					"name": "GDRS New Registration Excel file Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSDashbord_1.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/excel/v2/gdrs/new registration/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"excel",
+								"v2",
+								"gdrs",
+								"new registration",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GDRS Pending supplier file upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSDashbord_2.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/excel/v2/gdrs/pendingsupplier/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"excel",
+								"v2",
+								"gdrs",
+								"pendingsupplier",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All GDRS New Registration",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSDashbord_1.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://27a5-43-242-123-227.in.ngrok.io/api/excel/v2/gdrs/new registration",
+							"protocol": "https",
+							"host": [
+								"27a5-43-242-123-227",
+								"in",
+								"ngrok",
+								"io"
+							],
+							"path": [
+								"api",
+								"excel",
+								"v2",
+								"gdrs",
+								"new registration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
