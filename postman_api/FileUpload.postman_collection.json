@@ -113,6 +113,44 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get All GDRS Pending supplier",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSDashbord_2.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://27a5-43-242-123-227.in.ngrok.io/api/excel/v2/gdrs/pendingsupplier",
+							"protocol": "https",
+							"host": [
+								"27a5-43-242-123-227",
+								"in",
+								"ngrok",
+								"io"
+							],
+							"path": [
+								"api",
+								"excel",
+								"v2",
+								"gdrs",
+								"pendingsupplier"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
