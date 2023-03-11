@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 3rem;
+}
+.h-left{
+    align-items: center;
+    font-size: 3rem;
+}
+.h-right{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+.h-right > div {
+    border: 1px solid;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}

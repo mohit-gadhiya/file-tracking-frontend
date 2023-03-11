@@ -1,0 +1,32 @@
+.Table{
+    border: 1px solid violet;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+th.sort-asc::after {
+    content: ' ▲';
+}
+
+th.sort-desc::after {
+    content: ' ▼';
+}

@@ -1,0 +1,12 @@
+.upload-excel{
+    display: flex;
+    border: 1px solid red;
+    margin-block: 3rem;
+    padding: 1rem;
+}
+.upload-excel > h1{
+    margin-right: 3rem;
+}
+.upload-excel > button {
+    border-radius: 8px;
+}
